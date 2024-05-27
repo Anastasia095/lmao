@@ -1,9 +1,8 @@
-// index.js
 const express = require('express');
 const helloRouter = require('./hello');
 
 const router = express.Router();
 
-router.use('/', helloRouter); // Use helloRouter instead of hello
+router.use('/', helloRouter); // Use helloRouter
 
 module.exports = router;

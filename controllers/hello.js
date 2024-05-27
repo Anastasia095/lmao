@@ -1,9 +1,9 @@
-// hello.js
 const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Hello Jean!');
+    console.log('Serving Hello Page');
+    res.render('hello', { name: 'Jean', title: 'Hello Page' });
 });
 
 module.exports = router;
