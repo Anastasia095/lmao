@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
         date: '2024-05-27',
       },
       view: {
-        type: 'portrait-simple',
+        type: 'landscape-simple',
         parameters: {},
       },
     };

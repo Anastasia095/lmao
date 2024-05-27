@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
+    background-image: url("../images/pastel-background.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +10,33 @@ body {
     margin: 0;
 }
 
+/* footer {
+    background-image: url("../images/wp9644898.webp");
+} */
+
+
+.freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.freeman-small {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .container {
     text-align: center;
-    background: #fff;
+    background: rgba(255, 192, 203, 0.5);
+    /* Pink shade with 80% opacity */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 h1 {
     color: #333;
