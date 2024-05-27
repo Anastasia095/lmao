@@ -10,7 +10,6 @@ router.get('/', async (req, res) => {
     const secret = process.env.SECRET;
     const credentials = `${applicationId}:${secret}`;
     const authString = btoa(credentials);
-    console.log(authString);
     const apiUrl = 'https://api.astronomyapi.com/api/v2/studio/moon-phase';
 
     // Request body
