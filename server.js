@@ -1,7 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const routes = require('./controllers');
-const { engine } = require('express-handlebars'); // Correct import for v6+
+const { engine } = require('express-handlebars');
 
 const app = express();
 
@@ -17,8 +18,11 @@ const PORT = process.env.PORT || 3001;
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// Use the routes defined in the 'controllers' directory
 app.use(routes);
 
+// Start the server
 app.listen(PORT, () => {
   console.log('Now listening on port', PORT);
 });
