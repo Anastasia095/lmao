@@ -1,18 +1,23 @@
 /* public/styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    background-image: url("../images/pastel-background.jpg");
+    background-color: #f1eedd;
+    /* background-image: url("../images/pastel-background.jpg"); */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
 }
 
-/* footer {
-    background-image: url("../images/wp9644898.webp");
+/* .header-container {
+    background-image: url("../images/coolwhale.jpg");
 } */
+
+footer {
+    background-color: black;
+    color: white;
+}
 
 
 .freeman-regular {
@@ -30,10 +35,12 @@ body {
 
 .container {
     text-align: center;
-    background: rgba(255, 192, 203, 0.5);
+    color: black;
+    background: rgba(81, 62, 188, 0.5);
     /* Pink shade with 80% opacity */
+    /* background: rgb(46, 46, 184); */
     padding: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
