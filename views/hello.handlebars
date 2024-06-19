@@ -1,33 +1,37 @@
-{{!-- TESTING FONTS --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Freeman&display=swap"
     rel="stylesheet">
 
 <div class="container-fluid">
-    <header class="text-center mt-4">
-        {{!-- <h1 class="text-uppercase">This was so not worth wasting my sleep 😫🛌</h1> --}}
-        {{!-- <p id="current-time" class="mt-4 freeman-regular"></p> --}}
-        <p id="countdown" class="mt-4 freeman-regular"></p>
-    </header>
-    <main>
-        {{!-- <section id="moon-goddess" class="sailor-section bg-light py-5"> --}}
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-8 text-center">
-                        <h1 class="display-4">Hello {{name}} !</h1>
-                        <p class="moon-phase">Current Moon Phase: Full Moon</p>
-                        <div id="moon-image-container" class="mt-4"></div>
+    <div class="header-container text-center mt-4">
+        <!-- You can replace the src with the actual path to your image -->
+        <img src="../images/coolwhale.jpg" alt="Header Image" class="img-fluid">
+    </div>
+    <div class="content-container bg-white py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 text-center">
+                    <h1 class="display-4">Hello {{name}} !</h1>
+                    <p class="moon-phase">Current Moon Phase: Full Moon</p>
+                    <div id="moon-image-container" class="mt-4"></div>
+                    <button class="btn btn-primary mt-3" onclick="doNothing()">Click me</button>
+                    <div class="button-header mt-4">
+                        <button class="btn btn-secondary mx-2" onclick="doNothing()">Button 1</button>
+                        <button class="btn btn-secondary mx-2" onclick="doNothing()">Button 2</button>
+                        <button class="btn btn-secondary mx-2" onclick="doNothing()">Button 3</button>
                     </div>
                 </div>
             </div>
-            {{!--
-        </section> --}}
-        {{!-- <section id="power-rangers" class="sailor-section"> --}}
-            <!-- Content related to Sailor Scouts or power -->
-        </section>
-    </main>
+        </div>
+    </div>
     <footer class="text-center fixed-bottom py-3">
         <p class="freeman-small">Created with ❤️ by Banana 🍌</p>
     </footer>
 </div>
+
+<script>
+    function doNothing() {
+        // This function intentionally does nothing
+    }
+</script>
