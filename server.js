@@ -13,7 +13,7 @@ app.set('view engine', 'handlebars');
 // Specify the directory where Handlebars templates are stored
 app.set('views', path.join(__dirname, 'views'));
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3004;
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
