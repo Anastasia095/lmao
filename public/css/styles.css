@@ -125,3 +125,17 @@ h1 {
     /* Adjust as needed */
     font-weight: bold;
 }
+
+.btn-custom {
+    border-color: #643dcf;
+    color: #643dcf;
+    transition: box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+    color: #8ce6ec;
+    /* Optional: Changes text color on hover */
+    background-color: #643dcf;
+    /* Optional: Changes background color on hover */
+    box-shadow: 0 0 10px #643dcf, 0 0 20px #643dcf, 0 0 30px #643dcf;
+}
