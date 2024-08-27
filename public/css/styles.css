@@ -139,3 +139,37 @@ h1 {
     /* Optional: Changes background color on hover */
     box-shadow: 0 0 10px #643dcf, 0 0 20px #643dcf, 0 0 30px #643dcf;
 }
+
+
+
+h1 {
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+h1:hover {
+    animation: float 3s infinite;
+    /* Apply the float animation on hover */
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, -5px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    75% {
+        transform: translate(0, -5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
